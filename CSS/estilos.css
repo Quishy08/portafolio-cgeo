@@ -179,6 +179,11 @@ main {
   flex-direction: column;
   gap: 1rem;
   justify-content: center;
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
 }
 
 .icono {
@@ -204,6 +209,12 @@ main {
 
 .icono.email {
   background-color: #124559;
+}
+
+#content-area {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 5%;
 }
 
 footer {

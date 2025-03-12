@@ -9,12 +9,19 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <script
+      src="/scripts/frame.js"
+      language="javascript"
+      type="text/javascript"
+    ></script>
   </head>
   <body>
     <header>
       <div class="header-izquierdo">
         <h1 class="logo">
-          <a href="index.html">Cristian<br />GEO</a>
+          <a href="index.html" onclick="return loadContent('index.html')"
+            >Cristian<br />GEO</a
+          >
         </h1>
       </div>
       <nav>
@@ -29,45 +36,49 @@
       </nav>
     </header>
 
-    <main>
-      <section class="inicio">
-        <div class="inicio-img">
-          <div class="foto-perfil">
-            <img src="/imagenes/imagen_index.png" alt="foto personal" />
+    <!-- This div will contain the dynamic content -->
+    <div id="content-area">
+      <main>
+        <section class="inicio">
+          <div class="inicio-img">
+            <div class="foto-perfil">
+              <img src="/imagenes/imagen_index.png" alt="foto personal" />
+            </div>
           </div>
-        </div>
-        <div class="inicio-contenido">
-          <p class="saludo">Hola, soy</p>
-          <h2 class="nombre">Cristian</h2>
-          <h3 class="texto-escribiendo">Un <span></span></h3>
-          <p class="informacion">
-            Estudiante de Ingeniería en Tecnologías de la Información y
-            Comunicación. Listo para afrontar nuevos retos y aprender cosas
-            nuevas.
-          </p>
-        </div>
-        <div class="iconos">
-          <a
-            href="https://www.linkedin.com/in/crisgeo08/"
-            target="_blank"
-            class="icono linkedin"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/cristianespinosa___/"
-            target="_blank"
-            class="icono instagram"
-            ><i class="fa-brands fa-square-instagram"></i
-          ></a>
-          <a
-            href="mailto:cristiangeo804@gmail.com"
-            class="icono email"
-            target="_blank"
-            ><i class="fas fa-envelope"></i
-          ></a>
-        </div>
-      </section>
-    </main>
+          <div class="inicio-contenido">
+            <p class="saludo">Hola, soy</p>
+            <h2 class="nombre">Cristian</h2>
+            <h3 class="texto-escribiendo">Un <span></span></h3>
+            <p class="informacion">
+              Estudiante de Ingeniería en Tecnologías de la Información y
+              Comunicación. Listo para afrontar nuevos retos y aprender cosas
+              nuevas.
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <div class="iconos">
+      <a
+        href="https://www.linkedin.com/in/crisgeo08/"
+        target="_blank"
+        class="icono linkedin"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+      <a
+        href="https://www.instagram.com/cristianespinosa___/"
+        target="_blank"
+        class="icono instagram"
+        ><i class="fa-brands fa-square-instagram"></i
+      ></a>
+      <a
+        href="mailto:cristiangeo804@gmail.com"
+        class="icono email"
+        target="_blank"
+        ><i class="fas fa-envelope"></i
+      ></a>
+    </div>
 
     <footer>
       <p>&copy; 2025 TECNM/ITP/CRISTIAN GAEL ESPINOSA OROZCO</p>
