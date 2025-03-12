@@ -22,7 +22,8 @@ function loadContent(page) {
         if (section) {
           contentArea.innerHTML = section.outerHTML;
         } else {
-          contentArea.innerHTML = "<p>Content not found in the page.</p>";
+          contentArea.innerHTML =
+            "<p>Contenido no encontrado en la pagina.</p>";
         }
       }
 
@@ -33,8 +34,9 @@ function loadContent(page) {
       setupTypingAnimation();
     })
     .catch((error) => {
-      console.error("Error loading page:", error);
-      contentArea.innerHTML = "<p>Error loading content. Please try again.</p>";
+      console.error("Error cargando pagina:", error);
+      contentArea.innerHTML =
+        "<p>Error cargando contenido. Por favor intentalo otra vez.</p>";
     });
 
   // Prevent the default link behavior
