@@ -1,0 +1,69 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f6f5e8;
+  color: #121212;
+  margin: 0;
+  padding: 0;
+}
+
+.frame-foto-datos {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  gap: 40px;
+}
+
+.frame-imagen-datos {
+  flex: 0 0 380px;
+}
+
+.imagen-perfil {
+  width: 100%;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.informacion-perfil {
+  flex: 1;
+}
+
+.nombre-perfil {
+  font-size: 36px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.fecha-perfil {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.descripcion-perfil {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.titulo-lenguajes {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.lenguajes {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .contenedor-perfil {
+    flex-direction: column;
+  }
+
+  .contenedor-imagen {
+    flex: none;
+    max-width: 100%;
+  }
+}
