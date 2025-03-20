@@ -132,11 +132,11 @@ main {
 
 .texto-escribiendo span::after {
   content: "";
-  background-color: var(--color-principal-bg);
+  background-color: #f6f5e8;
   position: absolute;
   width: calc(10% + 8px);
   height: 100%;
-  border-left: 3px solid #aec3b0;
+  border-left: 3px solid #f6f5e8;
   right: -8;
   animation: cursor 0.6s infinite;
 }
