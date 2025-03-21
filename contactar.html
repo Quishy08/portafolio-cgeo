@@ -37,45 +37,162 @@
     </header>
 
     <div class="container mt-5">
+      <!-- Success message div (hidden by default) -->
+      <div class="alert alert-success d-none" id="successMessage" role="alert">
+        ¡Gracias! Tu mensaje ha sido enviado correctamente.
+      </div>
+
       <form
         id="contactForm"
         action="https://formsubmit.co/cristiangeo804@gmail.com"
         method="POST"
+        enctype="multipart/form-data"
       >
-        <div class="mb-3">
-          <label for="name" class="form-label">Nombre</label>
-          <input
-            type="text"
-            class="form-control"
-            id="name"
-            name="name"
-            placeholder="John Doe"
-            required
-          />
+        <!-- nombre y correo -->
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="name" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              placeholder="John Doe"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label">Correo Electrónico</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="nombre@ejemplo.com"
+              required
+            />
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Correo Electrónico</label>
-          <input
-            type="email"
-            class="form-control"
-            id="email"
-            name="email"
-            placeholder="nombre@ejemplo.com"
-            required
-          />
+
+        <!-- numero y genero -->
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="phone" class="form-label">Número de Teléfono</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="phone"
+              name="phone"
+              placeholder="+52 123 456 789"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="gender" class="form-label">Sexo</label>
+            <select class="form-select" id="gender" name="gender">
+              <option value="" selected disabled>Seleccionar</option>
+              <option value="Masculino">Masculino</option>
+              <option value="Femenino">Femenino</option>
+              <option value="Otro">Otro</option>
+              <option value="Prefiero no decir">Prefiero no decir</option>
+            </select>
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="comments" class="form-label">Comentarios</label>
-          <textarea
-            class="form-control"
-            id="comments"
-            name="comments"
-            rows="3"
-            required
-          ></textarea>
+
+        <!-- calle y numero -->
+        <div class="row mb-3">
+          <div class="col-12">
+            <label for="street" class="form-label">Dirección</label>
+            <input
+              type="text"
+              class="form-control"
+              id="street"
+              name="street_address"
+              placeholder="Calle y número"
+            />
+          </div>
         </div>
-        <div class="mb-3">
-          <button type="submit" class="btn btn-primary">Enviar</button>
+
+        <!-- pais y cuidad -->
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="country" class="form-label">País</label>
+            <input
+              type="text"
+              class="form-control"
+              id="country"
+              name="country"
+              placeholder=""
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="state" class="form-label">Estado</label>
+            <input
+              type="text"
+              class="form-control"
+              id="state"
+              name="state"
+              placeholder=""
+            />
+          </div>
+        </div>
+
+        <!-- cuidad y codigo postal -->
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <label for="city" class="form-label">Ciudad</label>
+            <input
+              type="text"
+              class="form-control"
+              id="city"
+              name="city"
+              placeholder=""
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="postal_code" class="form-label">Código Postal</label>
+            <input
+              type="text"
+              class="form-control"
+              id="postal_code"
+              name="postal_code"
+              placeholder=""
+            />
+          </div>
+        </div>
+
+        <!-- carga de archivos -->
+        <div class="row mb-3">
+          <div class="col-12">
+            <label for="attachment" class="form-label">Adjuntar Archivo</label>
+            <input
+              type="file"
+              class="form-control"
+              id="attachment"
+              name="attachment"
+            />
+            <div class="form-text">Tamaño máximo de archivo: 25MB</div>
+          </div>
+        </div>
+
+        <!-- comentarios -->
+        <div class="row mb-3">
+          <div class="col-12">
+            <label for="comments" class="form-label">Comentarios</label>
+            <textarea
+              class="form-control"
+              id="comments"
+              name="comments"
+              rows="3"
+              required
+            ></textarea>
+          </div>
+        </div>
+
+        <!-- boton para enviar -->
+        <div class="row mb-3">
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
         </div>
       </form>
     </div>
