@@ -1,17 +1,15 @@
-/* General Styles */
 .estudios-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
 
-/* Section Title Styles */
-.section-title {
+.seccion-titulo {
   margin: 2rem 0 3rem;
   text-align: center;
 }
 
-.section-title h1 {
+.seccion-titulo h1 {
   font-size: 2.5rem;
   font-weight: 600;
   color: var(--texto-principal);
@@ -20,7 +18,7 @@
   padding-bottom: 0.5rem;
 }
 
-.section-title h1:after {
+.seccion-titulo h1:after {
   content: "";
   position: absolute;
   width: 50%;
@@ -30,8 +28,7 @@
   left: 25%;
 }
 
-/* Education Section Styles */
-.education-section {
+.seccion-educacion {
   margin-bottom: 5rem;
   background-color: #fff;
   border-radius: 10px;
@@ -39,27 +36,26 @@
   overflow: hidden;
 }
 
-.education-header {
+.educacion-header {
   background-color: var(--color-contraste);
   color: white;
   padding: 1.5rem;
   text-align: center;
 }
 
-.education-header h2 {
+.educacion-header h2 {
   margin: 0;
   font-size: 1.8rem;
   font-weight: 500;
 }
 
-.education-content {
+.educacion-contenido {
   display: flex;
   flex-wrap: wrap;
   padding: 1.5rem;
   gap: 2rem;
 }
 
-/* Carousel Styles */
 .carousel-wrapper {
   flex: 1;
   min-width: 280px;
@@ -83,7 +79,6 @@
   border-top: 1px solid #eee;
 }
 
-/* Map Styles */
 .map-wrapper {
   flex: 2;
   min-width: 280px;
@@ -92,27 +87,25 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Description Styles */
-.education-description {
+.educacion-descripcion {
   padding: 1.5rem 2rem 2rem;
   color: var(--texto-principal);
 }
 
-.education-description h3 {
+.educacion-descripcion h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   color: var(--color-contraste);
 }
 
-.education-description p {
+.educacion-descripcion p {
   font-size: 1.1rem;
   line-height: 1.6;
   text-align: justify;
 }
 
-/* Responsive Styles */
 @media (max-width: 992px) {
-  .education-content {
+  .educacion-contenido {
     flex-direction: column;
   }
 
@@ -123,19 +116,19 @@
 }
 
 @media (max-width: 768px) {
-  .section-title h1 {
+  .seccion-titulo h1 {
     font-size: 2rem;
   }
 
-  .education-header h2 {
+  .educacion-header h2 {
     font-size: 1.5rem;
   }
 
-  .education-description h3 {
+  .educacion-descripcion h3 {
     font-size: 1.3rem;
   }
 
-  .education-description p {
+  .educacion-descricion p {
     font-size: 1rem;
   }
 }
@@ -145,20 +138,20 @@
     padding: 1rem 0.5rem;
   }
 
-  .education-section {
+  .seccion-educacion {
     margin-bottom: 3rem;
   }
 
-  .education-header {
+  .educacion-header {
     padding: 1rem;
   }
 
-  .education-content {
+  .educacion-contenido {
     padding: 1rem;
     gap: 1.5rem;
   }
 
-  .education-description {
+  .educacion-descripcion {
     padding: 1rem 1.5rem 1.5rem;
   }
 }
