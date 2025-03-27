@@ -1,17 +1,15 @@
-/* Estilos Generales */
 .pretenciones-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
 
-/* Estilos del Título de Sección */
-.section-title {
+.seccion-titulo {
   margin: 2rem 0 3rem;
   text-align: center;
 }
 
-.section-title h1 {
+.seccion-titulo h1 {
   font-size: 2.5rem;
   font-weight: 600;
   color: var(--texto-principal);
@@ -20,7 +18,7 @@
   padding-bottom: 0.5rem;
 }
 
-.section-title h1:after {
+.seccion-titulo h1:after {
   content: "";
   position: absolute;
   width: 50%;
@@ -30,8 +28,7 @@
   left: 25%;
 }
 
-/* Estilos del Banner */
-.banner-section {
+.seccion-banner {
   height: 180px;
   background-image: url("../imagenes/tech_banner.jpg");
   background-size: cover;
@@ -49,15 +46,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(
-    18,
-    69,
-    89,
-    0.7
-  ); /* Color que coincide con --color-contraste */
+  background-color: rgba(18, 69, 89, 0.7);
 }
 
-.banner-content {
+.banner-contenido {
   position: relative;
   z-index: 2;
   color: white;
@@ -65,13 +57,12 @@
   padding: 3rem 2rem;
 }
 
-.banner-content h2 {
+.banner-contenido h2 {
   font-size: 2.2rem;
   font-weight: 500;
 }
 
-/* Estilos de la Tarjeta de Pretensiones */
-.pretenciones-card {
+.pretenciones-tarjeta {
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
@@ -79,11 +70,11 @@
   margin-bottom: 3rem;
 }
 
-.pretenciones-content {
+.pretenciones-contenido {
   padding: 2rem;
 }
 
-.pretenciones-content h3 {
+.pretenciones-contenido h3 {
   font-size: 1.4rem;
   color: var(--color-contraste);
   margin-top: 2rem;
@@ -92,55 +83,54 @@
   align-items: center;
 }
 
-.pretenciones-content h3:first-child {
+.pretenciones-contenido h3:first-child {
   margin-top: 0;
 }
 
-.pretenciones-content h3 i {
+.pretenciones-contenido h3 i {
   margin-right: 0.8rem;
   font-size: 1.2rem;
 }
 
-.pretenciones-content p {
+.pretenciones-contenido p {
   font-size: 1.1rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
   color: var(--texto-principal);
 }
 
-.pretenciones-content ul {
+.pretenciones-contenido ul {
   padding-left: 2.5rem;
   margin-bottom: 1.5rem;
 }
 
-.pretenciones-content li {
+.pretenciones-contenido li {
   margin-bottom: 0.7rem;
   font-size: 1.1rem;
   line-height: 1.5;
   color: var(--texto-principal);
 }
 
-.pretenciones-content li strong {
+.pretenciones-contenido li strong {
   color: var(--color-contraste);
   font-weight: 600;
 }
 
-/* Estilos Responsivos */
 @media (max-width: 768px) {
-  .section-title h1 {
+  .seccion-titulo h1 {
     font-size: 2rem;
   }
 
-  .banner-content h2 {
+  .banner-contenido h2 {
     font-size: 1.8rem;
   }
 
-  .pretenciones-content h3 {
+  .pretenciones-contenido h3 {
     font-size: 1.3rem;
   }
 
-  .pretenciones-content p,
-  .pretenciones-content li {
+  .pretenciones-contenido p,
+  .pretenciones-contenido li {
     font-size: 1rem;
   }
 }
@@ -150,19 +140,19 @@
     padding: 1rem 0.5rem;
   }
 
-  .banner-section {
+  .seccion-banner {
     height: 150px;
   }
 
-  .banner-content {
+  .banner-contenido {
     padding: 2rem 1rem;
   }
 
-  .banner-content h2 {
+  .banner-contenido h2 {
     font-size: 1.5rem;
   }
 
-  .pretenciones-content {
+  .pretenciones-contenido {
     padding: 1.5rem;
   }
 }
