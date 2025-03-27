@@ -1,11 +1,11 @@
-/* General Styles */
-.estudios-container {
+/* Estilos Generales */
+.experiencia-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: this is 2rem 1rem;
 }
 
-/* Section Title Styles */
+/* Estilos del Título de Sección */
 .section-title {
   margin: 2rem 0 3rem;
   text-align: center;
@@ -30,8 +30,8 @@
   left: 25%;
 }
 
-/* Education Section Styles */
-.education-section {
+/* Estilos de Sección de Experiencia */
+.experiencia-section {
   margin-bottom: 5rem;
   background-color: #fff;
   border-radius: 10px;
@@ -39,27 +39,37 @@
   overflow: hidden;
 }
 
-.education-header {
+.experiencia-header {
   background-color: var(--color-contraste);
   color: white;
   padding: 1.5rem;
   text-align: center;
+  position: relative;
 }
 
-.education-header h2 {
+.experiencia-header h2 {
   margin: 0;
   font-size: 1.8rem;
   font-weight: 500;
 }
 
-.education-content {
+.periodo {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 0.3rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+.experiencia-content {
   display: flex;
   flex-wrap: wrap;
   padding: 1.5rem;
   gap: 2rem;
 }
 
-/* Carousel Styles */
+/* Estilos del Carousel */
 .carousel-wrapper {
   flex: 1;
   min-width: 280px;
@@ -83,7 +93,7 @@
   border-top: 1px solid #eee;
 }
 
-/* Map Styles */
+/* Estilos del Mapa */
 .map-wrapper {
   flex: 2;
   min-width: 280px;
@@ -92,27 +102,77 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Description Styles */
-.education-description {
+/* Estilos de la Descripción */
+.experiencia-description {
   padding: 1.5rem 2rem 2rem;
   color: var(--texto-principal);
 }
 
-.education-description h3 {
+.experiencia-description h3 {
   font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--color-contraste);
+  text-align: center;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px dashed #eee;
+}
+
+.experiencia-description h4 {
+  font-size: 1.25rem;
   margin-bottom: 1rem;
   color: var(--color-contraste);
 }
 
-.education-description p {
+.experiencia-description p {
   font-size: 1.1rem;
   line-height: 1.6;
   text-align: justify;
 }
 
-/* Responsive Styles */
+.experiencia-description ul {
+  padding-left: 1.5rem;
+}
+
+.experiencia-description li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  list-style-type: none;
+  padding-left: 1.5rem;
+}
+
+.experiencia-description li:before {
+  content: "•";
+  color: var(--color-contraste);
+  font-weight: bold;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+}
+
+.descripcion-seccion {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  height: 100%;
+}
+
+.logros-seccion {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  border-left: 4px solid var(--color-contraste);
+}
+
+.fas {
+  margin-right: 0.5rem;
+  color: var(--color-contraste);
+}
+
+/* Estilos Responsivos */
 @media (max-width: 992px) {
-  .education-content {
+  .experiencia-content {
     flex-direction: column;
   }
 
@@ -127,38 +187,44 @@
     font-size: 2rem;
   }
 
-  .education-header h2 {
+  .experiencia-header h2 {
     font-size: 1.5rem;
   }
 
-  .education-description h3 {
+  .experiencia-description h3 {
     font-size: 1.3rem;
   }
 
-  .education-description p {
+  .experiencia-description p,
+  .experiencia-description li {
     font-size: 1rem;
   }
 }
 
 @media (max-width: 576px) {
-  .estudios-container {
+  .experiencia-container {
     padding: 1rem 0.5rem;
   }
 
-  .education-section {
+  .experiencia-section {
     margin-bottom: 3rem;
   }
 
-  .education-header {
+  .experiencia-header {
     padding: 1rem;
   }
 
-  .education-content {
+  .experiencia-content {
     padding: 1rem;
     gap: 1.5rem;
   }
 
-  .education-description {
+  .experiencia-description {
     padding: 1rem 1.5rem 1.5rem;
+  }
+
+  .descripcion-seccion,
+  .logros-seccion {
+    padding: 1rem;
   }
 }
