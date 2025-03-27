@@ -97,7 +97,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilos de la Descripción */
 .experiencia-descripcion {
   padding: 1.5rem 2rem 2rem;
   color: var(--texto-principal);
@@ -161,8 +160,8 @@
 }
 
 .fas {
-  margin-right: 0.5rem;
-  color: var(--color-contraste);
+  margin-right: 0rem;
+  color: var(white);
 }
 
 @media (max-width: 992px) {
