@@ -1,17 +1,15 @@
-/* Estilos Generales */
 .experiencia-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: this is 2rem 1rem;
 }
 
-/* Estilos del Título de Sección */
-.section-title {
+.seccion-titulo {
   margin: 2rem 0 3rem;
   text-align: center;
 }
 
-.section-title h1 {
+.seccion-titulo h1 {
   font-size: 2.5rem;
   font-weight: 600;
   color: var(--texto-principal);
@@ -20,7 +18,7 @@
   padding-bottom: 0.5rem;
 }
 
-.section-title h1:after {
+.seccion-titulo h1:after {
   content: "";
   position: absolute;
   width: 50%;
@@ -30,8 +28,7 @@
   left: 25%;
 }
 
-/* Estilos de Sección de Experiencia */
-.experiencia-section {
+.seccion-experiencia {
   margin-bottom: 5rem;
   background-color: #fff;
   border-radius: 10px;
@@ -62,14 +59,13 @@
   margin-top: 0.5rem;
 }
 
-.experiencia-content {
+.experiencia-contenido {
   display: flex;
   flex-wrap: wrap;
   padding: 1.5rem;
   gap: 2rem;
 }
 
-/* Estilos del Carousel */
 .carousel-wrapper {
   flex: 1;
   min-width: 280px;
@@ -93,7 +89,6 @@
   border-top: 1px solid #eee;
 }
 
-/* Estilos del Mapa */
 .map-wrapper {
   flex: 2;
   min-width: 280px;
@@ -103,12 +98,12 @@
 }
 
 /* Estilos de la Descripción */
-.experiencia-description {
+.experiencia-descripcion {
   padding: 1.5rem 2rem 2rem;
   color: var(--texto-principal);
 }
 
-.experiencia-description h3 {
+.experiencia-descripcion h3 {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
   color: var(--color-contraste);
@@ -117,30 +112,30 @@
   border-bottom: 2px dashed #eee;
 }
 
-.experiencia-description h4 {
+.experiencia-descripcion h4 {
   font-size: 1.25rem;
   margin-bottom: 1rem;
   color: var(--color-contraste);
 }
 
-.experiencia-description p {
+.experiencia-descripcion p {
   font-size: 1.1rem;
   line-height: 1.6;
   text-align: justify;
 }
 
-.experiencia-description ul {
+.experiencia-descripcion ul {
   padding-left: 1.5rem;
 }
 
-.experiencia-description li {
+.experiencia-descripcion li {
   margin-bottom: 0.5rem;
   position: relative;
   list-style-type: none;
   padding-left: 1.5rem;
 }
 
-.experiencia-description li:before {
+.experiencia-descripcion li:before {
   content: "•";
   color: var(--color-contraste);
   font-weight: bold;
@@ -149,7 +144,7 @@
   left: 0;
 }
 
-.descripcion-seccion {
+.seccion-descripcion {
   margin-bottom: 2rem;
   padding: 1.5rem;
   background-color: #f9f9f9;
@@ -157,7 +152,7 @@
   height: 100%;
 }
 
-.logros-seccion {
+.seccion-logros {
   margin-top: 1.5rem;
   padding: 1.5rem;
   background-color: #f9f9f9;
@@ -170,7 +165,6 @@
   color: var(--color-contraste);
 }
 
-/* Estilos Responsivos */
 @media (max-width: 992px) {
   .experiencia-content {
     flex-direction: column;
@@ -183,7 +177,7 @@
 }
 
 @media (max-width: 768px) {
-  .section-title h1 {
+  .seccion-titulo h1 {
     font-size: 2rem;
   }
 
@@ -191,12 +185,12 @@
     font-size: 1.5rem;
   }
 
-  .experiencia-description h3 {
+  .experiencia-descripcion h3 {
     font-size: 1.3rem;
   }
 
-  .experiencia-description p,
-  .experiencia-description li {
+  .experiencia-descripcion p,
+  .experiencia-descripcion li {
     font-size: 1rem;
   }
 }
@@ -206,7 +200,7 @@
     padding: 1rem 0.5rem;
   }
 
-  .experiencia-section {
+  .seccion-experiencia {
     margin-bottom: 3rem;
   }
 
@@ -214,17 +208,17 @@
     padding: 1rem;
   }
 
-  .experiencia-content {
+  .experiencia-contenido {
     padding: 1rem;
     gap: 1.5rem;
   }
 
-  .experiencia-description {
+  .experiencia-descripcion {
     padding: 1rem 1.5rem 1.5rem;
   }
 
-  .descripcion-seccion,
-  .logros-seccion {
+  .seccion-descripcion,
+  .seccion-logros {
     padding: 1rem;
   }
 }
