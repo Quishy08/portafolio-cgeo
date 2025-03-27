@@ -1,44 +1,235 @@
-.hobbies-title {
-  margin-top: 5px;
-  margin-bottom: 50px;
-  padding-left: 109px;
+/* Contenedor principal */
+.hobbies-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Estilos del título de sección */
+.section-title {
+  margin: 2rem 0 3rem;
+  text-align: center;
+}
+
+.section-title h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--texto-principal);
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.section-title h1:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background-color: var(--color-contraste);
+  bottom: 0;
+  left: 25%;
+}
+
+/* Sección del carrusel */
+.carousel-section {
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 #hobbiesCarousel {
-  max-width: 45%;
-  margin: 0 auto;
-}
-
-@media (min-width: 768px) {
-  #hobbiesCarousel {
-    max-width: 45%;
-  }
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 #hobbiesCarousel .carousel-item img {
   height: 500px;
   object-fit: cover;
+  width: 100%;
 }
 
 #hobbiesCarousel .carousel-caption {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(18, 69, 89, 0.7);
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px 20px;
+  max-width: 200px;
+  margin: 0 auto;
+  bottom: 20px;
 }
 
-@media (max-width: 767px) {
-  #hobbiesCarousel .carousel-caption {
-    display: block !important;
-  }
+#hobbiesCarousel .carousel-caption h5 {
+  font-size: 1.3rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+#hobbiesCarousel .carousel-indicators {
+  margin-bottom: 0.5rem;
 }
 
 #hobbiesCarousel .carousel-indicators button {
-  background-color: #2c3e50;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
 }
 
 #hobbiesCarousel .carousel-control-prev-icon,
 #hobbiesCarousel .carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(18, 69, 89, 0.7);
   border-radius: 50%;
-  padding: 10px;
+  padding: 1.2rem;
+}
+
+/* Sección de información de hobbies */
+.hobbies-info {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+
+.hobbies-info h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: var(--texto-principal);
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.hobbies-info h2:after {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 3px;
+  background-color: var(--color-contraste);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Grid de tarjetas de hobbies */
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.hobby-card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 1.8rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hobby-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.hobby-icon {
+  font-size: 2.5rem;
+  color: var(--color-contraste);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.hobby-card h3 {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--texto-principal);
+}
+
+.hobby-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--texto-principal);
+}
+
+/* Sección de otros intereses */
+.otros-intereses {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 1.8rem;
+  border-left: 4px solid var(--color-contraste);
+}
+
+.otros-intereses h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--texto-principal);
+}
+
+.otros-intereses p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--texto-principal);
+  margin-bottom: 0;
+}
+
+/* Diseño responsivo */
+@media (max-width: 992px) {
+  #hobbiesCarousel .carousel-item img {
+    height: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title h1 {
+    font-size: 2rem;
+  }
+
+  .hobbies-info h2 {
+    font-size: 1.8rem;
+  }
+
+  #hobbiesCarousel .carousel-item img {
+    height: 400px;
+  }
+
+  #hobbiesCarousel .carousel-caption {
+    display: block !important;
+  }
+
+  .hobbies-grid {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .hobbies-container {
+    padding: 1rem 0.5rem;
+  }
+
+  #hobbiesCarousel .carousel-item img {
+    height: 350px;
+  }
+
+  .hobbies-info {
+    padding: 1.5rem;
+  }
+
+  .hobby-card {
+    padding: 1.5rem;
+  }
+
+  .otros-intereses {
+    padding: 1.5rem;
+  }
+
+  .hobby-icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .hobby-card h3 {
+    font-size: 1.3rem;
+  }
 }

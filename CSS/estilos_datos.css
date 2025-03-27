@@ -1,69 +1,218 @@
-body {
-  font-family: "Segoe UI", sans-serif;
-  background-color: #f6f5e8;
-  color: #121212;
-  margin: 0;
-  padding: 0;
-}
-
-.frame-foto-datos {
-  display: flex;
+/* Contenedor principal */
+.datos-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 40px 20px;
-  gap: 40px;
+  padding: 2rem 1rem;
 }
 
-.frame-imagen-datos {
-  flex: 0 0 380px;
+/* Estilos del título de sección */
+.section-title {
+  margin: 2rem 0 3rem;
+  text-align: center;
 }
 
-.imagen-perfil {
-  width: 100%;
-  border: 1px solid #ccc;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.section-title h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--texto-principal);
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
 }
 
-.informacion-perfil {
+.section-title h1:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background-color: var(--color-contraste);
+  bottom: 0;
+  left: 25%;
+}
+
+/* Tarjeta de perfil */
+.perfil-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+
+.perfil-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Contenedor de foto */
+.perfil-foto-container {
   flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
-.nombre-perfil {
-  font-size: 36px;
-  font-weight: 500;
-  margin-bottom: 10px;
-  margin-top: 0;
+.perfil-foto-wrapper {
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
 }
 
-.fecha-perfil {
-  font-size: 18px;
-  color: #333;
-  margin-bottom: 30px;
+.perfil-foto {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s ease;
 }
 
-.descripcion-perfil {
-  font-size: 18px;
+.perfil-foto:hover {
+  transform: scale(1.02);
+}
+
+/* Información de perfil */
+.perfil-info {
+  flex: 2;
+  min-width: 280px;
+}
+
+.perfil-nombre {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--texto-principal);
+  margin-bottom: 0.5rem;
+}
+
+.perfil-detalles {
+  font-size: 1.1rem;
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.perfil-detalles i {
+  color: var(--color-contraste);
+  margin-right: 0.3rem;
+}
+
+.perfil-separador {
+  height: 1px;
+  background-color: #e9ecef;
+  margin: 1.5rem 0;
+}
+
+.perfil-descripcion {
+  margin-bottom: 1.5rem;
+}
+
+.perfil-descripcion p {
+  font-size: 1.1rem;
   line-height: 1.6;
-  margin-bottom: 40px;
+  color: var(--texto-principal);
 }
 
-.titulo-lenguajes {
-  font-size: 30px;
+/* Lenguajes */
+.perfil-lenguajes h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: var(--texto-principal);
+}
+
+.perfil-lenguajes i {
+  color: var(--color-contraste);
+  margin-right: 0.5rem;
+}
+
+.lenguajes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.lenguaje-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.lenguaje-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.lenguaje-nombre {
   font-weight: 500;
-  margin-bottom: 20px;
+  color: var(--texto-principal);
 }
 
-.lenguajes {
-  font-size: 18px;
+.lenguaje-nivel {
+  color: var(--color-contraste);
+  font-weight: 500;
+  padding: 0.2rem 0.6rem;
+  background-color: rgba(18, 69, 89, 0.1);
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 992px) {
+  .perfil-nombre {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 768px) {
-  .contenedor-perfil {
-    flex-direction: column;
+  .section-title h1 {
+    font-size: 2rem;
   }
 
-  .contenedor-imagen {
-    flex: none;
-    max-width: 100%;
+  .perfil-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .perfil-foto-container {
+    align-items: center;
+  }
+
+  .perfil-nombre {
+    font-size: 1.8rem;
+  }
+
+  .perfil-descripcion p {
+    font-size: 1rem;
+  }
+
+  .perfil-lenguajes h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .datos-container {
+    padding: 1rem 0.5rem;
+  }
+
+  .perfil-content {
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+
+  .perfil-detalles {
+    font-size: 1rem;
+  }
+
+  .lenguajes-grid {
+    grid-template-columns: 1fr;
   }
 }
