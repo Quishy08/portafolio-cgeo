@@ -1,23 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-
+    <title>Pretensiones Profesionales</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="CSS/estilos.css" />
+    <link rel="stylesheet" href="CSS/estilo_pretenciones.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
   </head>
   <body>
+    <!-- Sección de Encabezado -->
     <header>
       <div class="header-izquierdo">
         <h1 class="logo">
-          <a href="index.html" onclick="return loadContent('index.html')"
-            >Cristian<br />GEO</a
-          >
+          <a href="index.html" onclick="return loadContent('index.html')">
+            Cristian<br />GEO
+          </a>
         </h1>
       </div>
       <nav>
@@ -32,27 +38,101 @@
       </nav>
     </header>
 
+    <div class="container pretenciones-container">
+      <!-- Título Principal -->
+      <div class="section-title text-center">
+        <h1>Pretensiones Profesionales</h1>
+      </div>
+
+      <!-- Banner inspirador -->
+      <div class="banner-section">
+        <div class="banner-overlay"></div>
+        <div class="banner-content">
+          <h2>Mi Futuro Profesional</h2>
+        </div>
+      </div>
+
+      <!-- Sección de pretensiones simplificada -->
+      <div class="pretenciones-card">
+        <div class="pretenciones-content">
+          <h3><i class="fas fa-bullseye"></i> Objetivos Profesionales</h3>
+          <p>
+            Busco desarrollar mi carrera como ingeniero en software,
+            especializándome en desarrollo web y aplicaciones móviles. Mi
+            objetivo es trabajar en proyectos innovadores que tengan un impacto
+            positivo en la sociedad.
+          </p>
+
+          <h3><i class="fas fa-laptop-code"></i> Habilidades a Desarrollar</h3>
+          <ul>
+            <li>
+              Dominio avanzado de frameworks de desarrollo web (React, Angular,
+              Vue)
+            </li>
+            <li>Desarrollo de aplicaciones móviles</li>
+            <li>Arquitectura de software y patrones de diseño</li>
+            <li>DevOps y CI/CD</li>
+          </ul>
+
+          <h3><i class="fas fa-building"></i> Empresas Objetivo</h3>
+          <p>
+            Aspiro a formar parte de empresas tecnológicas innovadoras como
+            Google, Microsoft, Amazon o startups disruptivas en el sector
+            tecnológico.
+          </p>
+
+          <h3><i class="fas fa-coins"></i> Expectativas Salariales</h3>
+          <p>
+            Mis expectativas salariales iniciales se sitúan entre $20,000 y
+            $25,000 MXN mensuales, con oportunidades de crecimiento a medida que
+            adquiera más experiencia.
+          </p>
+
+          <h3><i class="fas fa-road"></i> Plan de Desarrollo</h3>
+          <ul>
+            <li>
+              <strong>Corto Plazo:</strong> Completar mi carrera con excelentes
+              calificaciones y obtener certificaciones en desarrollo web.
+            </li>
+            <li>
+              <strong>Mediano Plazo:</strong> Trabajar como desarrollador en una
+              empresa reconocida y especializarme en áreas específicas.
+            </li>
+            <li>
+              <strong>Largo Plazo:</strong> Alcanzar posiciones de liderazgo
+              técnico o gestión de proyectos.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Iconos de Redes Sociales -->
     <div class="iconos">
       <a
         href="https://www.linkedin.com/in/crisgeo08/"
         target="_blank"
         class="icono linkedin"
+        aria-label="LinkedIn"
         ><i class="fab fa-linkedin-in"></i
       ></a>
       <a
         href="https://www.instagram.com/cristianespinosa___/"
         target="_blank"
         class="icono instagram"
+        aria-label="Instagram"
         ><i class="fa-brands fa-square-instagram"></i
       ></a>
       <a
         href="mailto:cristiangeo804@gmail.com"
         class="icono email"
         target="_blank"
+        aria-label="Email"
         ><i class="fas fa-envelope"></i
       ></a>
     </div>
 
+    <!-- Sección de Pie de Página -->
     <footer>
       <p>&copy; 2025 TECNM/ITP/CRISTIAN GAEL ESPINOSA OROZCO</p>
     </footer>

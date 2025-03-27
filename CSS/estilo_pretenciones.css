@@ -1,0 +1,168 @@
+/* Estilos Generales */
+.pretenciones-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Estilos del Título de Sección */
+.section-title {
+  margin: 2rem 0 3rem;
+  text-align: center;
+}
+
+.section-title h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--texto-principal);
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.section-title h1:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 3px;
+  background-color: var(--color-contraste);
+  bottom: 0;
+  left: 25%;
+}
+
+/* Estilos del Banner */
+.banner-section {
+  height: 180px;
+  background-image: url("../imagenes/tech_banner.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    18,
+    69,
+    89,
+    0.7
+  ); /* Color que coincide con --color-contraste */
+}
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.banner-content h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+/* Estilos de la Tarjeta de Pretensiones */
+.pretenciones-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+
+.pretenciones-content {
+  padding: 2rem;
+}
+
+.pretenciones-content h3 {
+  font-size: 1.4rem;
+  color: var(--color-contraste);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.pretenciones-content h3:first-child {
+  margin-top: 0;
+}
+
+.pretenciones-content h3 i {
+  margin-right: 0.8rem;
+  font-size: 1.2rem;
+}
+
+.pretenciones-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: var(--texto-principal);
+}
+
+.pretenciones-content ul {
+  padding-left: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.pretenciones-content li {
+  margin-bottom: 0.7rem;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: var(--texto-principal);
+}
+
+.pretenciones-content li strong {
+  color: var(--color-contraste);
+  font-weight: 600;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+  .section-title h1 {
+    font-size: 2rem;
+  }
+
+  .banner-content h2 {
+    font-size: 1.8rem;
+  }
+
+  .pretenciones-content h3 {
+    font-size: 1.3rem;
+  }
+
+  .pretenciones-content p,
+  .pretenciones-content li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .pretenciones-container {
+    padding: 1rem 0.5rem;
+  }
+
+  .banner-section {
+    height: 150px;
+  }
+
+  .banner-content {
+    padding: 2rem 1rem;
+  }
+
+  .banner-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .pretenciones-content {
+    padding: 1.5rem;
+  }
+}
