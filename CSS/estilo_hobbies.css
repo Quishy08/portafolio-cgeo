@@ -1,17 +1,15 @@
-/* Contenedor principal */
 .hobbies-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
 
-/* Estilos del título de sección */
-.section-title {
+.seccion-titulo {
   margin: 2rem 0 3rem;
   text-align: center;
 }
 
-.section-title h1 {
+.seccion-titulo h1 {
   font-size: 2.5rem;
   font-weight: 600;
   color: var(--texto-principal);
@@ -20,7 +18,7 @@
   padding-bottom: 0.5rem;
 }
 
-.section-title h1:after {
+.seccion-titulo h1:after {
   content: "";
   position: absolute;
   width: 50%;
@@ -30,8 +28,7 @@
   left: 25%;
 }
 
-/* Sección del carrusel */
-.carousel-section {
+.seccion-carousel {
   max-width: 800px;
   margin: 0 auto 3rem;
   border-radius: 10px;
@@ -83,7 +80,6 @@
   padding: 1.2rem;
 }
 
-/* Sección de información de hobbies */
 .hobbies-info {
   background-color: white;
   border-radius: 10px;
@@ -112,7 +108,6 @@
   transform: translateX(-50%);
 }
 
-/* Grid de tarjetas de hobbies */
 .hobbies-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -120,7 +115,7 @@
   margin-bottom: 2.5rem;
 }
 
-.hobby-card {
+.hobby-tarjeta {
   background-color: #f8f9fa;
   border-radius: 10px;
   padding: 1.8rem;
@@ -128,32 +123,31 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.hobby-card:hover {
+.hobby-tarjeta:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
-.hobby-icon {
+.hobby-icono {
   font-size: 2.5rem;
   color: var(--color-contraste);
   margin-bottom: 1.5rem;
   text-align: center;
 }
 
-.hobby-card h3 {
+.hobby-tarjeta h3 {
   font-size: 1.4rem;
   text-align: center;
   margin-bottom: 1rem;
   color: var(--texto-principal);
 }
 
-.hobby-card p {
+.hobby-tarjeta p {
   font-size: 1rem;
   line-height: 1.6;
   color: var(--texto-principal);
 }
 
-/* Sección de otros intereses */
 .otros-intereses {
   background-color: #f8f9fa;
   border-radius: 10px;
@@ -174,7 +168,6 @@
   margin-bottom: 0;
 }
 
-/* Diseño responsivo */
 @media (max-width: 992px) {
   #hobbiesCarousel .carousel-item img {
     height: 450px;
