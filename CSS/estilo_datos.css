@@ -1,17 +1,15 @@
-/* Contenedor principal */
 .datos-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
 
-/* Estilos del título de sección */
-.section-title {
+.seccion-titulo {
   margin: 2rem 0 3rem;
   text-align: center;
 }
 
-.section-title h1 {
+.seccion-titulo h1 {
   font-size: 2.5rem;
   font-weight: 600;
   color: var(--texto-principal);
@@ -20,7 +18,7 @@
   padding-bottom: 0.5rem;
 }
 
-.section-title h1:after {
+.seccion-titulo h1:after {
   content: "";
   position: absolute;
   width: 50%;
@@ -30,8 +28,7 @@
   left: 25%;
 }
 
-/* Tarjeta de perfil */
-.perfil-card {
+.perfil-tarjeta {
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
@@ -39,14 +36,13 @@
   margin-bottom: 3rem;
 }
 
-.perfil-content {
+.perfil-contenido {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   padding: 2rem;
 }
 
-/* Contenedor de foto */
 .perfil-foto-container {
   flex: 1;
   min-width: 280px;
@@ -74,7 +70,6 @@
   transform: scale(1.02);
 }
 
-/* Información de perfil */
 .perfil-info {
   flex: 2;
   min-width: 280px;
@@ -118,7 +113,6 @@
   color: var(--texto-principal);
 }
 
-/* Lenguajes */
 .perfil-lenguajes h3 {
   font-size: 1.4rem;
   margin-bottom: 1rem;
@@ -165,18 +159,73 @@
   font-size: 0.9rem;
 }
 
-@media (max-width: 992px) {
-  .perfil-nombre {
-    font-size: 2rem;
-  }
+.musica-seccion {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+
+.musica-header {
+  padding: 1.5rem;
+  background-color: var(--color-contraste);
+  color: white;
+  text-align: center;
+}
+
+.musica-header h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.musica-content {
+  padding: 2rem;
+}
+
+.musica-description {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.musica-description p {
+  font-size: 1.1rem;
+  color: var(--texto-principal);
+}
+
+.canciones-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.cancion {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.cancion:hover {
+  transform: translateY(-5px);
+}
+
+.cancion-titulo {
+  padding: 1rem;
+  background-color: #f8f9fa;
+  text-align: center;
+  font-weight: 500;
+  color: var(--texto-principal);
+  border-bottom: 1px solid #eee;
 }
 
 @media (max-width: 768px) {
-  .section-title h1 {
+  .seccion-titulo h1 {
     font-size: 2rem;
   }
 
-  .perfil-content {
+  .perfil-contenido {
     flex-direction: column;
     gap: 1.5rem;
   }
@@ -198,12 +247,19 @@
   }
 }
 
+.musica-header h2 {
+  font-size: 1.5rem;
+}
+
+.playlist-container {
+  grid-template-columns: 1fr;
+}
 @media (max-width: 576px) {
   .datos-container {
     padding: 1rem 0.5rem;
   }
 
-  .perfil-content {
+  .perfil-contenido {
     padding: 1.5rem;
     gap: 1rem;
   }
