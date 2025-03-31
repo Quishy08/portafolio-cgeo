@@ -272,3 +272,163 @@
     grid-template-columns: 1fr;
   }
 }
+
+/* CSS para la sección de Familia y Amigos */
+.familia-amigos-seccion {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+}
+
+.seccion-header {
+  background-color: var(--color-contraste);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.seccion-header h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.seccion-header i {
+  margin-right: 0.5rem;
+}
+
+.tabs-container {
+  padding: 2rem;
+}
+
+.nav-tabs {
+  border-bottom: 2px solid #eee;
+  margin-bottom: 2rem;
+}
+
+.nav-tabs .nav-link {
+  color: var(--texto-principal);
+  font-weight: 500;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  margin-right: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.nav-tabs .nav-link:hover {
+  color: var(--color-contraste);
+}
+
+.nav-tabs .nav-link.active {
+  color: var(--color-contraste);
+  background-color: transparent;
+  border-bottom: 3px solid var(--color-contraste);
+}
+
+.personas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.persona-tarjeta {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.persona-tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.persona-imagen-wrapper {
+  height: 220px;
+  overflow: hidden;
+}
+
+.persona-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.persona-tarjeta:hover .persona-imagen {
+  transform: scale(1.05);
+}
+
+.persona-info {
+  padding: 1rem;
+  text-align: center;
+}
+
+.persona-nombre {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+  color: var(--texto-principal);
+}
+
+.persona-relacion {
+  color: var(--color-contraste);
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .seccion-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .tabs-container {
+    padding: 1.5rem;
+  }
+
+  .personas-grid {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 1rem;
+  }
+
+  .persona-imagen-wrapper {
+    height: 180px;
+  }
+
+  .persona-nombre {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .tabs-container {
+    padding: 1rem;
+  }
+
+  .personas-grid {
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 0.8rem;
+  }
+
+  .persona-imagen-wrapper {
+    height: 150px;
+  }
+
+  .nav-tabs .nav-link {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+  .persona-nombre {
+    font-size: 1rem;
+  }
+
+  .persona-relacion {
+    font-size: 0.8rem;
+  }
+}
