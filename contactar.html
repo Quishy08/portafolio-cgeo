@@ -37,7 +37,6 @@
     </header>
 
     <div class="container mt-5">
-      <!-- Success message div (hidden by default) -->
       <div class="alert alert-success d-none" id="successMessage" role="alert">
         ¡Gracias! Tu mensaje ha sido enviado correctamente.
       </div>
@@ -48,7 +47,6 @@
         method="POST"
         enctype="multipart/form-data"
       >
-        <!-- nombre y correo -->
         <div class="row mb-3">
           <div class="col-md-6">
             <label for="name" class="form-label">Nombre</label>
@@ -74,7 +72,6 @@
           </div>
         </div>
 
-        <!-- numero y genero -->
         <div class="row mb-3">
           <div class="col-md-6">
             <label for="phone" class="form-label">Número de Teléfono</label>
@@ -96,7 +93,6 @@
           </div>
         </div>
 
-        <!-- calle y numero -->
         <div class="row mb-3">
           <div class="col-12">
             <label for="street" class="form-label">Dirección</label>
@@ -110,7 +106,6 @@
           </div>
         </div>
 
-        <!-- pais y cuidad -->
         <div class="row mb-3">
           <div class="col-md-6">
             <label for="country" class="form-label">País</label>
@@ -134,7 +129,6 @@
           </div>
         </div>
 
-        <!-- cuidad y codigo postal -->
         <div class="row mb-3">
           <div class="col-md-6">
             <label for="city" class="form-label">Ciudad</label>
@@ -158,7 +152,6 @@
           </div>
         </div>
 
-        <!-- carga de archivos -->
         <div class="row mb-3">
           <div class="col-12">
             <label for="attachment" class="form-label">Adjuntar Archivo</label>
@@ -172,7 +165,6 @@
           </div>
         </div>
 
-        <!-- comentarios -->
         <div class="row mb-3">
           <div class="col-12">
             <label for="comments" class="form-label">Comentarios</label>
@@ -186,7 +178,39 @@
           </div>
         </div>
 
-        <!-- boton para enviar -->
+        <div class="row mb-3">
+          <div class="col-12">
+            <div class="form-check">
+              <label class="form-label fw-bold">¿Quieres una respuesta?</label>
+              <div class="ms-3">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="need_response"
+                    id="response_yes"
+                    value="Sí"
+                    checked
+                  />
+                  <label class="form-check-label" for="response_yes">
+                    Sí
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="need_response"
+                    id="response_no"
+                    value="No"
+                  />
+                  <label class="form-check-label" for="response_no"> No </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="row mb-3">
           <div class="col-12">
             <button type="submit" class="btn btn-primary">Enviar</button>
